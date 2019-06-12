@@ -1,12 +1,12 @@
 package com.hht.myBatisSpringbootDemo.mapper;
 
-import org.mybatis.spring.annotation.MapperScan;
+import org.apache.ibatis.annotations.Mapper;
 
 import com.hht.myBatisSpringbootDemo.entity.CommonTable;
 
-@MapperScan
+@Mapper
 public interface CommonTableMapper {
 
-	CommonTable getCommonTable(int id);
+	CommonTable getCommonTable(Integer id);
 	
 }

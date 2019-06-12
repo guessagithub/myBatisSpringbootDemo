@@ -15,7 +15,7 @@ public class CommonTableController {
 	private CommonTableMapper commonTableMapper;
 	
 	@GetMapping("/commonTable/{id}")
-	public CommonTable getCommonTable(@PathVariable int id) {
+	public CommonTable getCommonTable(@PathVariable Integer id) {
 		CommonTable commonTable = commonTableMapper.getCommonTable(id);
 		return commonTable;
 	}
